@@ -14,7 +14,7 @@
 <body>    
     
      <!--Nav Bar-->
-<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
    <a class="navbar-brand" href="#">
     <img src="images/github.png" alt="Logo" style="width:40px;">
   </a>
@@ -27,19 +27,19 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
     <li class="nav-item">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#home">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Projects</a>
+      <a class="nav-link" href="#featuredProjects">Projects</a>
     </li>
           <li class="nav-item">
-      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#about">About</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">Resume</a>
     </li>
      <li class="nav-item">
-      <a class="nav-link" href="#">Contact</a>
+      <a class="nav-link" href="#contact">Contact</a>
     </li>
   </ul>
   </div>  
@@ -47,7 +47,7 @@
     
      <!--Intro-->
 <div class="jumbotron jumbotron-fluid">
-  <div class="container" id="profile">
+  <div class="container" id="home">
       <img src="images/corimori.JPG" alt="pic" class="rounded-circle mx-auto d-block img-fluid">
       <h2>Cori Mori</h2>
       <h3>Game Designer</h3>
@@ -58,20 +58,18 @@
 <div class="container" id="midCon"><br>
     
 
-    
+<div id="featuredProjects"> 
 <h2>Featured Projects</h2>
-  
+</div>
     
-<div class="card-columns">
+<div class="card-columns" id="projects">
         <!--Schmack Card-->
-        <div class="card" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-    <div class="card-body">
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
       <h4 class="card-title">Schmack</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sModal">
-    More Info
-  </button>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#sModal" class="btn btn-primary">More Info</a>
     </div>
   </div>
         <!-- Schmack Modal -->
@@ -101,14 +99,12 @@
     
     
         <!--BattleBlock Card-->
-        <div class="card" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-    <div class="card-body">
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
       <h4 class="card-title">BattleBlock</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#bModal">
-    More Info
-  </button>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#bModal" class="btn btn-primary">More Info</a>
     </div>
   </div>
         <!-- BattleBlock Modal -->
@@ -138,14 +134,12 @@
     
     
         <!--Unity Card-->
-        <div class="card col2" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-    <div class="card-body">
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
       <h4 class="card-title">Unity</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#uModal">
-    More Info
-  </button>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#uModal" class="btn btn-primary">More Info</a>
     </div>
   </div>
         <!-- Unity Modal -->
@@ -174,14 +168,81 @@
   </div>
 
         <!--Card-->
-        <div class="card col2" style="width:400px">
-    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title">Unity</h4>
-      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#aModal">
-    More Info
-  </button>
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Blank</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#aModal" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+        <!--Modal -->
+        <div class="modal fade" id="aModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+        <!--Card-->
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Blank</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#aModal" class="btn btn-primary">More Info</a>
+    </div>
+  </div>
+        <!--Modal -->
+        <div class="modal fade" id="aModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+            
+    
+        <!--Card-->
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Blank</h4>
+      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+      <a href="#aModal" class="btn btn-primary">More Info</a>
     </div>
   </div>
         <!--Modal -->
@@ -212,10 +273,21 @@
     
     
 </div>
+  
+    
+<div id="about"> 
+<h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac orci. Morbi quis commodo odio aenean sed adipiscing diam donec. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Sed felis eget velit aliquet sagittis id. Nunc congue nisi vitae suscipit tellus mauris a diam. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Viverra justo nec ultrices dui. Aliquam faucibus purus in massa tempor nec feugiat. Ut sem viverra aliquet eget. Viverra justo nec ultrices dui sapien eget mi proin sed. Tellus in metus vulputate eu scelerisque felis. Mi tempus imperdiet nulla malesuada pellentesque. Aliquet risus feugiat in ante metus dictum at tempor.</p>
+</div> 
+    
 </div>
+        
     
 <!--Contact Container-->
-<div class="container" id="bottomCon">
+<div class="container" id="contact">
+    
+    <h2>Contact Me</h2>
+    
     <!--Contact Form-->
 <form action="https://formspree.io/mdoajzer" method="POST">
     <label>Your Name:<input type="text" name="name"></label><br>
