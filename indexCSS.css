@@ -1,0 +1,103 @@
+
+body
+{
+    background-color:#404040 !important;
+}
+footer
+{
+    background-color: #f2f2f2 !important;
+    height: 2.5rem;
+}
+.jumbotron
+{
+    background-image: url("images/geo.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 35rem;
+    text-align: center;
+    color: white;
+}
+#profile
+{
+    padding-top: 3rem;
+}
+#midCon
+{
+    text-align: center;
+    box-shadow: 10px 14px 5px #262626;
+    background-color: #f2f2f2;
+    border-top-left-radius: .4rem;
+    border-top-right-radius: .4rem;
+}
+.colTwo
+{
+    margin-left: 26.5rem;
+}
+#secRow
+{
+    margin-top: 5rem;
+}
+#bottomCon
+{
+    padding-left: 26rem;
+    padding-right: 26rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f2f2f2;
+    border-bottom-left-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    box-shadow: 10px 10px 5px #262626;
+    margin-bottom: 2rem;
+}
+
+
+
+input[type=text], select {
+  width: 100%;
+  padding: .5rem .95rem;
+  margin: .25rem 0;
+  display: inline-block;
+  border: .15rem solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: .4rem;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 101%;
+  padding: .5rem 1rem;
+  margin: .25rem 0;
+  display: inline-block;
+  border: .15rem solid #ccc;
+  border-radius: .4rem;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 115%;
+  height: 7rem;
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+  border: .15rem solid #ccc;
+  border-radius: .4rem;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+
+input[type=submit] {
+  width: 99%;
+  background-color: #c180ff;
+  color: white;
+  padding: .5rem 1rem;
+  margin: .5rem 0;
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #420080;
+}
