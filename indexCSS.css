@@ -64,7 +64,12 @@ footer
     margin-top: 2rem;
     color: #ffffff;
 }
-#contact
+
+#gameplay
+{
+    padding-left: 15rem;
+}
+#bot
 {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -74,10 +79,76 @@ footer
     border-bottom-right-radius: .4rem;
     box-shadow: .5rem .5rem .25rem #262626;
     margin-bottom: 2rem;
+    
+    display: flex;
 }
 
 
 
+input[type=text], select {
+  width: 148%;
+  padding: .5rem .95rem;
+  margin: .25rem 0;
+  display: inline-block;
+  border: .15rem solid #ccc;
+  background-color: #f8f8f8;
+  border-radius: .4rem;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 149%;
+  padding: .5rem 1rem;
+  margin: .25rem 0;
+  display: inline-block;
+  border: .15rem solid #ccc;
+  border-radius: .4rem;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 170%;
+  height: 7rem;
+  padding: .5rem 1rem;
+  box-sizing: border-box;
+  border: .15rem solid #ccc;
+  border-radius: .4rem;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+
+input[type=submit] {
+  width: 50%;
+  background-color: #a3a3c2;
+  color: white;
+  padding: .5rem 1rem;
+  margin: .5rem 0;
+  border: none;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #7575a3;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 600px)
+{
+    
+#bot
+{
+    text-align: center;
+    display: block;
+}
+    
+    
 input[type=text], select {
   width: 100%;
   padding: .5rem .95rem;
@@ -90,7 +161,7 @@ input[type=text], select {
 }
 
 input[type=email], select {
-  width: 101%;
+  width: 100%;
   padding: .5rem 1rem;
   margin: .25rem 0;
   display: inline-block;
@@ -101,7 +172,7 @@ input[type=email], select {
 }
 
 textarea {
-  width: 115%;
+  width: 100%;
   height: 7rem;
   padding: .5rem 1rem;
   box-sizing: border-box;
@@ -113,7 +184,7 @@ textarea {
 
 
 input[type=submit] {
-  width: 30%;
+  width: 100%;
   background-color: #a3a3c2;
   color: white;
   padding: .5rem 1rem;
@@ -125,4 +196,13 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #7575a3;
+}
+    
+#gameplay
+{
+    display: none;
+}
+    
+
+    
 }
