@@ -114,7 +114,7 @@ textarea {
 
 input[type=submit] {
   width: 30%;
-  background-color: #c180ff;
+  background-color: #a3a3c2;
   color: white;
   padding: .5rem 1rem;
   margin: .5rem 0;
@@ -124,5 +124,5 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #420080;
+  background-color: #7575a3;
 }
