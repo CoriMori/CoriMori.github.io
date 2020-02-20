@@ -4,21 +4,18 @@
   <title>Cori Mori</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="indexCSS.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexCSS.css">
 </head>
     
 <body>    
     
      <!--Nav Bar-->
 <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-   <a class="navbar-brand" href="#">
+   <a class="navbar-brand" href="https://github.com/CoriMori">
     <img src="images/github.png" alt="Logo" style="width:40px;">
   </a>
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="https://www.linkedin.com/in/cori-mori-69979015a/">
     <img src="images/linkedin.png" alt="Logo" style="width:40px;">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -36,7 +33,7 @@
       <a class="nav-link" href="#about">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Resume</a>
+      <a class="nav-link" href="ResumeMori2020.pdf">Resume</a>
     </li>
      <li class="nav-item">
       <a class="nav-link" href="#contact">Contact</a>
@@ -50,7 +47,7 @@
   <div class="container" id="home">
       <img src="images/corimori.JPG" alt="pic" class="rounded-circle mx-auto d-block img-fluid">
       <h2>Cori Mori</h2>
-      <h3>Game Designer</h3>
+      <h3>Game and Level Designer</h3>
   </div>
 </div>
     
@@ -65,210 +62,76 @@
 <div class="card-columns" id="projects">
         <!--Schmack Card-->
         <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/schmack.PNG" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
       <h4 class="card-title">Schmack</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#sModal" class="btn btn-primary">More Info</a>
+        <div class="btnCard">
+    <button type="button" class="btn" data-toggle="modal" data-target="#sModal">More Info</button>
+        </div>
     </div>
   </div>
-        <!-- Schmack Modal -->
-        <div class="modal fade" id="sModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Schmack</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-    
+       
     
         <!--BattleBlock Card-->
         <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/BBT.PNG" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
       <h4 class="card-title">BattleBlock</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#bModal" class="btn btn-primary">More Info</a>
+        <div class="btnCard">
+      <button type="button" class="btn" data-toggle="modal" data-target="#bModal">More Info</button>
+        </div>
     </div>
   </div>
-        <!-- BattleBlock Modal -->
-        <div class="modal fade" id="bModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+
     
     
         <!--Unity Card-->
         <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/3DScene_Main.PNG" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
       <h4 class="card-title"> 3D Unity Scene</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#uModal" class="btn btn-primary">More Info</a>
+        <div class="btnCard">
+      <button type="button" class="btn" data-toggle="modal" data-target="#uModal">More Info</button>
+        </div>
     </div>
   </div>
-        <!-- Unity Modal -->
-        <div class="modal fade" id="uModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
         
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
+        <!--Card-->
+        <div class="card img-fluid" style="width:500px">
+    <img class="card-img-top" src="images/HL2.PNG" alt="Card image" style="width:100%">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Half-Life 2</h4>
+        <div class="btnCard">
+     <button type="button" class="btn" data-toggle="modal" data-target="#hModal">More Info</button>
         </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
     </div>
   </div>
 
-        <!--Card-->
-        <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
-    <div class="card-img-overlay">
-      <h4 class="card-title">Half-Life 2</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#aModal" class="btn btn-primary">More Info</a>
-    </div>
-  </div>
-        <!--Modal -->
-        <div class="modal fade" id="aModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
     
         <!--Card-->
         <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/Portal.PNG" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
       <h4 class="card-title">Portal 2</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#aModal" class="btn btn-primary">More Info</a>
+    <div class="btnCard">
+     <button type="button" class="btn" data-toggle="modal" data-target="#pModal">More Info</button>
+    </div>
     </div>
   </div>
-        <!--Modal -->
-        <div class="modal fade" id="aModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+
             
     
         <!--Card-->
         <div class="card img-fluid" style="width:500px">
-    <img class="card-img-top" src="images/test.jpg" alt="Card image" style="width:100%">
+    <img class="card-img-top" src="images/MM.PNG" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
-      <h4 class="card-title">Blank</h4>
-      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
-      <a href="#aModal" class="btn btn-primary">More Info</a>
+      <h4 class="card-title">Material Madness</h4>
+        <div class="btnCard">
+      <button type="button" class="btn" data-toggle="modal" data-target="#jModal">More Info</button>
+        </div>
     </div>
   </div>
-        <!--Modal -->
-        <div class="modal fade" id="aModal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+
    
     
     
@@ -277,7 +140,11 @@
     
 <div id="about"> 
 <h2>About Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In fermentum et sollicitudin ac orci. Morbi quis commodo odio aenean sed adipiscing diam donec. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra. Sed felis eget velit aliquet sagittis id. Nunc congue nisi vitae suscipit tellus mauris a diam. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Viverra justo nec ultrices dui. Aliquam faucibus purus in massa tempor nec feugiat. Ut sem viverra aliquet eget. Viverra justo nec ultrices dui sapien eget mi proin sed. Tellus in metus vulputate eu scelerisque felis. Mi tempus imperdiet nulla malesuada pellentesque. Aliquet risus feugiat in ante metus dictum at tempor.</p>
+    <p>My name is Cori Mori. I am in my 3rd year at the Rochester Institute of Technology (RIT) majoring in Game Design and Development and minoring in Psychology.  My passion for level design and environment building comes from a childhood spent playing games. Growing up in a small town, there wasn’t really much else to do. I was first introduced to computers and games around 3 or 4 years old by my Nana and I’ve been designing ever since. </p>
+    
+    <p>At RIT we are taught both the design and development processes behind games, but are encouraged to specialize. Naturally, I have decided to specialize in level design and environment building. In my various projects for school, I almost always take lead on the level design. I’ve been known to spend countless hours perfecting and balancing them based on feedback from teammates and playtesters. Some would say I am a bit obsessive, but I prefer the term passionate. </p>
+    
+    <p>I have been fortunate enough to be awarded a grant to work on a personal project, currently called Schmack, where I am the designer for the entire project. This opportunity has allowed me to get a sense of the long term design process, which I believe is an invaluable skill. I may not have industry experience, but I am always striving to learn more and improve.</p>
 </div> 
     
 </div>
@@ -302,7 +169,7 @@
   <div id="gameplay">
 <h2>Gameplay</h2>    
     
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WMmT4XF5d4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLeu8PG0zQaFApEwUuwrIql0owALxQ7rOV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     
 </div>
@@ -310,8 +177,172 @@
 </div>
     
     
+    
+    
+    
+    
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
 </body>
 <footer>
 <p>Cori Mori &copy;</p>
 </footer>
+    
+    
+    
+        <!-- Schmack Modal -->
+        <div class="modal fade" id="sModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Schmack</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+        Schmack is a 2D platformer focusing on fluid movement mechanics, exploration and narrative. In Spring 2020, my partner Nick Rassmussen and I began working on this full time in the MAGIC Maker Program after receiving a grant from MAGIC Spell Studios. I acted as the designer and spent most of the semester fleshing out the design for our demo and planning ahead for our continued development.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+        <!-- BattleBlock Modal -->
+        <div class="modal fade" id="bModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Ice LEvel-BattleBlock Theater</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            This is a simple level for BattleBlock Theater made using their in game level editor. My goal with this level was to make it fast paced, somewhat difficult, but still well balanced. This level went through a few different iterations, mainly on the section with the laser, due to it being too difficult. However, I feel that I have achieved my initial goal without sacrificing too much difficulty. Click <a href="https://youtu.be/VSAY3v4tP78">here</a> to view a playthrough of the level.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+        <!-- Unity Modal -->
+        <div class="modal fade" id="uModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Coffee Shop-3D Unity Scene</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         This simple 3D Unity scene displays the interior and exterior of a small coffee shop. This was a group project for 3D Animation and Asset Design, where I took the role of the level designer. I assisted in several of the actual assets, but mainly focused on designing the layout of the scene and placing the objects in the world. 
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+        <!--Half-Life 2 -->
+        <div class="modal fade" id="hModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Base Escape-Half-Life 2</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          This is a simple level for Half-Life 2 made using the Hammer Editor. This level implies some sort of escape narrative and features a vignette, both which add to the depth and make the level feel more immersive and developed. This level went through several playtests and iterations which encouraged me to expand the level and balance it so it was a bit more challenging. Click <a href="https://youtu.be/WMmT4XF5d4o">here</a> to view a playthrough of the level.
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+        <!--Portal 2 -->
+        <div class="modal fade" id="pModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Laser Lights-Portal 2</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          This is a level for Portal 2, made using their in game level editor. This level was designed to use just a few of the many mechanics in Portal 2 so the player wouldn’t be overwhelmed. With this level I focused on teaching the player the main mechanic and letting them figure out the less important ones as they went. Click <a href="https://youtu.be/EIueDdocm1s">here</a> to view a playthrough of the level.
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+        <!--Material Madness -->
+        <div class="modal fade" id="jModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Material Madness</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            Material Madness is a mobile platformer where you play as a rock with the ability to transform into different objects to traverse the level. For this project I worked as the level designer. I designed 3 levels that went through various iterations due to feedback from playtests. I was also responsible for building the environment with an asset pack.
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    
+    
 </html>

@@ -10,7 +10,7 @@ footer
 {
     background-color: #262626 !important;
     height: 2.5rem;
-    color:#ffffff;
+    color:whitesmoke;
 }
 .navbar
 {
@@ -39,6 +39,21 @@ footer
     text-align: center;
     color: white;
 }
+.btn
+{
+    background-color: #a3a3c2;
+    color: whitesmoke;
+}
+.btn:hover
+{
+    background-color: #7575a3;
+    color: whitesmoke;
+}
+.btnCard
+{
+    padding-top:10rem;
+    
+}
 #home
 {
     padding-top: 3rem;
@@ -54,8 +69,8 @@ footer
 }
 #about
 {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
@@ -135,9 +150,38 @@ input[type=submit]:hover {
 }
 
 
+@media only screen and (max-width: 1200px)
+{
+    .btnCard
+{
+   display: inline-block;
+    padding-top: .5rem;
+    
+}
+}
+@media only screen and (max-width: 1100px)
+{
+    .btnCard
+{
+   display: inline-block;
+    padding-top: .5rem;
+    
+}
+}
+@media only screen and (max-width: 1000px)
+{
+#gameplay
+{
+    display: none;
+}
+.btnCard
+{
+   display: inline-block;
+    padding-top: .5rem;
+    
+}
 
-
-
+}
 
 @media only screen and (max-width: 600px)
 {
@@ -198,11 +242,5 @@ input[type=submit]:hover {
   background-color: #7575a3;
 }
     
-#gameplay
-{
-    display: none;
-}
-    
-
     
 }
