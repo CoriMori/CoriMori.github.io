@@ -1,14 +1,72 @@
 body, html {
   height: 100%;
 }
+.slide {
+  height: 50%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.parallax {
+  position: relative;
+}
+.bg-img1 {
   background-image: url(./images/geo.jpg);
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.bgTint {
+  background-color: grey;
+  background-blend-mode: multiply;
+}
+
+.bg-img2 {
+  background-image: url(./images/QT_Header_RS.jpg);
+  height: 50%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-img3 {
+  background-image: url(./images/3DScene_Main.PNG);
+  height: 50%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#name_label {
+  font-family: "Coolvetica";
+  background-color: bisque;
+  margin: auto;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#Name{
+  font-size: 6em;
+}
+
+.center{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url(./fonts/coolvetica_rg.otf);
 }
 
 @media only screen and (max-device-width: 1366px) {
