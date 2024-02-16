@@ -11,7 +11,7 @@ body, html {
   position: relative;
 }
 .bg-img1 {
-  background-image: url(./images/geo.jpg);
+  background-image: url(./images/main_bg.png);
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -26,32 +26,38 @@ body, html {
 }
 
 .bg-img2 {
-  background-image: url(./images/QT_Header_RS.jpg);
-  height: 50%; 
+  background-image: url(./images/3DScene_Main.PNG);
+  height: 100%; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .bg-img3 {
-  background-image: url(./images/3DScene_Main.PNG);
-  height: 50%; 
+  background-image: url(./images/main_bg.png);
+  height: 100%; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+
 #name_label {
   font-family: "Coolvetica";
-  background-color: bisque;
   margin: auto;
   width: 50%;
+  color: white;
   transform: translate(-50%, -50%);
 }
 
 #Name{
   font-size: 6em;
+}
+
+.section-headers {
+  font-family: "Coolvetica";
+  color: white;
 }
 
 .center{
@@ -62,6 +68,57 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header-center{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+
+.para-center{
+  text-align: center;
+  position: relative;
+  margin: auto;
+  width: 50%;
+  left: 50%;
+  transform: translate(-100%, 25%);
+}
+
+.about-img{
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 15%);
+}
+
+.para-style{
+  font-family: "Coolvetica";
+  color: white;
+  font-size: larger;
+}
+
+.card-allign{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  left: 50%;
+  transform: translate(-100%, 15%);
+}
+
+.card-title{
+  font-family: "Coolvetica";
+  text-align: center;
+}
+
+.btn{
+  position: relative;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 @font-face {
