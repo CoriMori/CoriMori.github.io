@@ -94,73 +94,211 @@
     <div class = "section2" id = "projects">
       <h1 class = "header-center section-headers">Projects</h1>
     </div>
-    <div id="carouselMain" class="carousel slide bg-img3" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" id = "blazeSports"src="../client/public/images/rubble_1.png" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" id = "rubbleRepair"src="../client/public/images/rubble_3.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" id = "blazeRepair"src="../client/public/images/rubble_2.png" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" id = "dollhouse"src="../client/public/images/rubble_2.png" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" id = "met"src="../client/public/images/rubble_2.png" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" id = "quietThoughts"src="../client/public/images/rubble_2.png" alt="Third slide">
-        </div>
-        <div class="caro-overlay">
-          <div class="card-columns card-allign">
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/blaSport_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Blaze & the Monster Machines: Sports Day</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#SportModal">Learn More</button>
+    <div class ="bg-img3">
+      <div class="card-columns card-allign">
+        <div class="card">
+          <div id="sportCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/blaSport_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaSport_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaSport_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaSport_3.png" alt="Third slide">
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/dollhouse_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Bubble Guppies: Play House</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#DollModal">Learn More</button>
+            <a class="carousel-control-prev" href="#sportCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sportCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Blaze & the Monster Machines: Sports Day</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#SportModal">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div id="dollCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/dollhouse_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_4.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_5.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/doll_6.png" alt="Third slide">
               </div>
             </div>
-    
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/rubble_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Rubble & Crew: Ruff, Ruff, Repairs</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#RubbleModal">Learn More</button>
+            <a class="carousel-control-prev" href="#dollCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#dollCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bubble Guppies: Play House</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#DollModal">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div id="rubbleCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/rubble_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/rubble_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/rubble_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/rubble_3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/rubble_4.png" alt="Third slide">
               </div>
             </div>
-    
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/met_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Bubble Guppies: Dive into the MET</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#METModal">Learn More</button>
+            <a class="carousel-control-prev" href="#rubbleCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#rubbleCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Rubble & Crew: Ruff, Ruff, Repairs</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#RubbleModal">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div id="metCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/met_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/met_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/met_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/met_3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/met_4.png" alt="Third slide">
               </div>
             </div>
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/blaRepair_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Blaze & the Monster Machines: Ready, Set, Repair</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#BlazeRepairModal">Learn More</button>
+            <a class="carousel-control-prev" href="#metCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#metCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Bubble Guppies: Dive into the MET</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#METModal">Learn More</button>
+          </div>
+        </div>
+        <div class="card">
+          <div id="repCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_3.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_4.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_5.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/blaRepair_6.png" alt="Third slide">
               </div>
             </div>
-    
-            <div class="card">
-              <img class="card-img-top" src="../client/public/images/QT_cover.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">Quiet Thoughts</h5>
-                <button type="button" class="btn" data-toggle="modal" data-target="#QTModal">Learn More</button>
+            <a class="carousel-control-prev" href="#repCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#repCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Blaze & the Monster Machines: Ready, Set, Repair</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#BlazeRepairModal">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div id="QTCard" class="carousel slide carouselCard" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../client/public/images/QT_cover.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/qt_1.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/qt_2.png" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../client/public/images/qt_3.png" alt="Third slide">
               </div>
             </div>
+            <a class="carousel-control-prev" href="#QTCard" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#QTCard" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Quiet Thoughts</h5>
+            <button type="button" class="btn" data-toggle="modal" data-target="#QTModal">Learn More</button>
           </div>
         </div>
       </div>
@@ -182,7 +320,11 @@
           <p>Quiet Thoughts is a 2D platformer game designed to be very challenging to players.
             As the level designer for this project, I was tasked with designing all the platforming areas. 
             In each area I created multiple pathways through for players to take and chose spawn locations for various enemies and obstacles.
-            I also assisted in playtesting the game prior to release. Quiet Thoughts is free to play <a href = "https://store.steampowered.com/app/1514620/Quiet_Thoughts/">here</a>.
+            I also assisted in playtesting the game prior to release.
+            <br><br>
+            One of the biggest challenges I faced with this project was balance. It is very difficult to design levels well when the difficulty is meant to be almost rage inducing.
+            I spent a lot of time trying to balance the difficulty so the level was still possible, but not so easy that it didn't feel rewarding to get to the end.
+            Quiet Thoughts is free to play <a href = "https://store.steampowered.com/app/1514620/Quiet_Thoughts/">here</a>.
           </p>
         </div>
       </div>
@@ -202,6 +344,11 @@
             Players race against time to earn the most amount of points in each game and see how they stack up against their favorite Monster Machines.
             This game also features a co-play system, where 2 players can face off against each other by passing the device back and forth between rounds.
             As the developer on the this project, I was responsible for designing and implementing the mechanics, implementing art, animation VO, SFX, VFX, and music for each game.
+            <br><br>
+            Out of all of the minigames, Hockey was the most challenging to implement. In the hockey minigame, you can bounce the puck off of some angled bumpers.
+            Translating something that is very 3D into a 2D space was something that took a good bit of time to figure out.
+            To add to the challenge, there was also a goalie that could block your shots and then later a middle bumper. All of these needed to have the puck bounce off of them as well.
+            The final solution involved around 6 raycasts being drawn to create a path for the puck to follow and if a hit was detected it would reflect off of the object it hit.
           </p>
         </div>
       </div>
@@ -222,6 +369,11 @@
             Players complete literacy minigames to earn new items for rooms and even clothes and hats for the guppies.
             As the developer on the this project, I was responsible for designing and implementing the mechanics, implementing the object interactions, art, animation VO, SFX, VFX, and music.
             I was also heavily involved in the process of designing the different interactions between objects and characters.
+            <br><br>
+            This project was a challenge in general. Sandbox games are already pretty difficulty to create, but when you combine that with a small team and a short timeline it becomes even more difficult.
+            Out of all of the challenges faced during this project, the most difficult was probably screen scrolling. Some rooms are 2 screens wide, so you would have to swipe to see the other half.
+            The actual scrolling bit was fine, but there were already a lot touch and drag interactions happening on the characters and objects. 
+            It was very difficult to manage all of those on top of a full screen drag feature without things getting caught up.
           </p>
         </div>
       </div>
@@ -241,7 +393,12 @@
             Players join Rubble and his crew to help repair various buildings across Builder's Cove.
             Players complete literacy minigames to earn the parts and tools they need for the repairs.
             As the developer on the this project, I was responsible for designing and implementing the mechanics, implementing art, animation VO, SFX, VFX, and music.
+            <br><br>
             For this game, I had to develop an IK controller system for our Phaser engine which allows players to manipulate parts of animated characters in real time.
+            In a previous game I had attempted to do the same thing, but simply did not have the time to work out a proper solution.
+            This project gave me the chance revisit a failed solution and learn from it. Turns out my original solution wasn't that far off. It just need a few adjustments and worked perfectly.
+            The IK controller was actually the least challenging part of this project. The most challenging part was actually optimization. There are 9 areas in this game full of animations, SFX, VFX, and music, but it needed to run on a device with 2GB of ram.
+            It took quite a few tries to get it right and it was incredibly frustrating to fail over and over again, but despite all that this is still one of my favorite games. Simply because I was able to learn so much from it.
           </p>
         </div>
       </div>
@@ -261,6 +418,10 @@
             Players explore actual works of art on display in the MET and create their own artwork using stickers and a pallete inspired from the art they just saw.
             Players then have the chance to hang their own art on a gallery wall for the guppies to enjoy.
             As the developer on the this project, I was responsible for designing and implementing the mechanics, implementing art, animation VO, SFX, VFX, and music.
+            <br><br>
+            This was my first solo project as a professional developer, and I learned quite a bit during it. Right around beta, we realized that the game was broken on certain devices.
+            Come to find out that the technology I was using for 95% of the main mechanics in the game was WebGL only and those devices did not support it at the time.
+            I had to completely rebuild the main mechanics in about a week in raw Canvas to stay on track of the deadline. I was able to get it done in 3 days and it looked even better than before.
           </p>
         </div>
       </div>
@@ -279,6 +440,11 @@
           <p>Blaze & the Monster Machines: Ready, Set, Repair is an interactive literacy game that takes place in the Blaze universe.
             Players help repair various monster machines by completing literacy minigames to earn parts and tools for the repair.
             As the developer on the this project, I was responsible for designing and implementing the mechanics, implementing art, animation VO, SFX, VFX, and music.
+            <br><br>
+            This project is up there in terms of my favorites. The final product turned out really great, very snappy and fun. 
+            The only major hiccup in this project came with the vacuum hose. We didn't have an IK control system setup in engine yet, so I had to find a way around that.
+            The solution came in the form of a bezier curve. I created a bezier curve in the shape of the vacuum hose and then drew overlapping points in the same color as the hose asset.
+            From there it was just a matter of moving the head and updating the points. We did have to simplify the original asset, but this exact issue lead to the development of an in engine IK control system down the line.
           </p>
         </div>
       </div>

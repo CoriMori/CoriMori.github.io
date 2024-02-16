@@ -26,7 +26,7 @@ body, html {
   background-blend-mode: multiply;
 }
 
-.carousel-item:after {
+.item:after {
   content:"";
   position:absolute;
   top:0;
@@ -45,6 +45,7 @@ body, html {
   background-size: cover;
 }
 .bg-img3 {
+  background-image: url(./images/BBT.PNG);
   height: 100%; 
   background-attachment: fixed;
   background-position: center;
@@ -125,6 +126,7 @@ body, html {
   position: relative;
   margin: auto;
   width: 75%;
+  top: 15%;
 }
 
 .caro-overlay{
