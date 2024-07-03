@@ -46,7 +46,7 @@ body, html {
 }
 .bg-img3 {
   background-image: url(./images/BBT.PNG);
-  height: 100%; 
+  padding-top: 2%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,6 +56,7 @@ body, html {
 .navbar{
   background-color: black;
   font-family: "Coolvetica";
+  min-height: 60px;
 }
 
 .nav-link{
@@ -100,33 +101,26 @@ body, html {
   background-color: black;
 }
 
-.para-center{
-  text-align: center;
-  position: relative;
-  margin: auto;
-  width: 50%;
-  top: 10%;
+.about-section{
+  padding-top: 2%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .about-img{
-  border-radius: 50%;
-  position: relative;
-  margin: auto;
-  left: 50%;
-  transform: translate(-50%, 15%);
+  width: 50%;
+  height: auto;
+  border-radius: 50%;  
 }
 
 .para-style{
   font-family: "Coolvetica";
   color: white;
   font-size: larger;
-}
-
-.card-allign{
-  position: relative;
-  margin: auto;
-  width: 75%;
-  top: 15%;
+  padding-top: 2%;
 }
 
 .caro-overlay{
@@ -134,25 +128,44 @@ body, html {
   top: 15%;
 }
 
-.card-title{
+.card .card-title{
   font-family: "Coolvetica";
   text-align: center;
 }
 
-.btn{
-  position: relative;
-  margin: auto;
-  left: 50%;
-  transform: translate(-50%, 0%);
+.card .img-fit {
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
+
+.card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text{
+  flex-grow: 1;
+}
+
 
 @font-face {
   font-family: "Coolvetica";
   src: url(./fonts/coolvetica_rg.otf);
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media (max-width:767.98){
   .parallax {
     background-attachment: scroll;
+  }
+
+  .card .img-fit{
+    aspect-ratio: 1.45/1;
   }
 }
