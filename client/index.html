@@ -10,11 +10,54 @@
     
   </head>
   <body>
-    <nav class="navbar fixed-top navbar-expand-lg">
+
+    <div class="container">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <nav class="navbar collapse fixed-top navbar-expand-lg">
+          <button class="navbar-toggler collapsed navbar-dark" type="button" data-toggle="collapse" data-target="#NavCol" aria-controls="NavCol" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> 
+          </button>
+          <div class="navbar-collapse collapse" id="NavCol">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/cori-mori-69979015a/">
+              <img
+                src="../client//public/images/linkedin.png"
+                height="35"
+                loading="lazy"
+              />
+            </a>
+  
+            <a class="navbar-brand" href="https://github.com/CoriMori">
+              <img
+              src="../client//public/images/github.png"
+              height="35"
+              loading="lazy"
+              />
+            </a>
+  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../client/public/images/Mori_Resume.pdf">Resume</a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+      </div>
+    </div>
+    <!--<nav class="navbar fixed-top navbar-expand-lg">-->
       <!-- Container wrapper -->
-      <div class="container-fluid">
+      <!--<div class="container-fluid">
         <!-- Toggle button -->
-        <button
+       <!-- <button
           data-mdb-collapse-init
           class="navbar-toggler"
           type="button"
@@ -24,12 +67,12 @@
           aria-label="Toggle navigation"
         >
           <i class="fas fa-bars"></i>
-        </button>
+        </button>--> 
     
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--<div class="collapse navbar-collapse" id="navCollapse">-->
           <!-- Navbar brand -->
-          <a class="navbar-brand mt-2 mt-lg-0" href="https://github.com/CoriMori">
+          <!--<a class="navbar-brand mt-2 mt-lg-0" href="https://github.com/CoriMori">
             <img
               src="../client//public/images/github.png"
               height="35"
@@ -44,7 +87,7 @@
             />
           </a>
           <!-- Left links -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -59,11 +102,11 @@
             </li>
           </ul>
           <!-- Left links -->
-        </div>
+        <!--</div>-->
         <!-- Collapsible wrapper -->
-      </div>
+      <!--</div>-->
       <!-- Container wrapper -->
-    </nav>
+    <!--</nav>-->
 
 
     <div class="bg-img1" id = "home">
@@ -75,241 +118,420 @@
     <div class = "section1" id = "about">
       <h1 class = "header-center section-headers">About Me</h1>
     </div>
+
     <div class="bg-img2 bgTint">
-      <img class = "about-img" src = "../client/public/images/corimori.JPG">
-      <p class = "para-center para-style">
-        I graduated from the Rochester Institute of Technology in 2021 with a degree in Game Design and Development and a minor in psychology. 
-        For the past few years I have worked as a developer at a small studio where I was often the only developer on the project.
-        This experience has allowed me to learn how to work quickly and efficently while under pressure due to tight timelines.
-        When I wasn't working on projects, I was working on improving the engine, workflow, and various Research and Development Projects.
-        <br><br>
-        In my free time, I work on a variety of small projects to keep my other skills sharp. 
-        I primarily develop these projects in Unity using C#, but occasionally dabel in Unreal and C++.
-        One of the main things I tend to focus on in these projects is level design. 
-        When I was a kid, I spent a lot of time making paper prototypes of levels and that passion for level design never went away.
-        So while I have spent the past few year working as a full time developer, I never let my design skills get rusty.
-      </p>
+      <div class="container">
+        <div class="about-section">
+          <img class = "about-img" src = "../client/public/images/corimori.JPG">
+          <p class = "para-style">
+            I graduated from the Rochester Institute of Technology in 2021 with a degree in Game Design and Development and a minor in psychology. 
+            For the past few years I have worked as a developer at a small studio where I was often the only developer on the project.
+            This experience has allowed me to learn how to work quickly and efficently while under pressure due to tight timelines.
+            When I wasn't working on projects, I was working on improving the engine, workflow, and various Research and Development Projects.
+            <br><br>
+            In my free time, I work on a variety of small projects to keep my other skills sharp. 
+            I primarily develop these projects in Unity using C#, but occasionally dabel in Unreal and C++.
+            One of the main things I tend to focus on in these projects is level design. 
+            When I was a kid, I spent a lot of time making paper prototypes of levels and that passion for level design never went away.
+            So while I have spent the past few year working as a full time developer, I never let my design skills get rusty.
+          </p>
+        </div>
+      </div>
     </div>
 
     <div class = "section2" id = "projects">
       <h1 class = "header-center section-headers">Projects</h1>
     </div>
     <div class ="bg-img3 bgTint">
-      <div class="card-columns card-allign">
-        <div class="card">
-          <div id="sportCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/blaSport_cover.png" alt="First slide">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="sportCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_3.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#sportCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#sportCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaSport_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaSport_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaSport_3.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#sportCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#sportCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Blaze & the Monster Machines: Sports Day</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#SportModal">Learn More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="dollCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/dollhouse_cover.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_4.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_5.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/doll_6.png" alt="Third slide">
+              <div class="card-body">
+                <h5 class="card-title mb-4 mb-4">Blaze & the Monster Machines: Sports Day</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#SportModal">Learn More</button>
+                </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#dollCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#dollCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Bubble Guppies: Play House</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#DollModal">Learn More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="rubbleCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/rubble_cover.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/rubble_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/rubble_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/rubble_3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/rubble_4.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#rubbleCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#rubbleCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Rubble & Crew: Ruff, Ruff, Repairs</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#RubbleModal">Learn More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="metCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/met_cover.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/met_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/met_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/met_3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/met_4.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#metCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#metCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Bubble Guppies: Dive into the MET</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#METModal">Learn More</button>
-          </div>
-        </div>
-        <div class="card">
-          <div id="repCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_cover.png" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_3.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_4.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_5.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/blaRepair_6.png" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#repCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#repCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Blaze & the Monster Machines: Ready, Set, Repair</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#BlazeRepairModal">Learn More</button>
-          </div>
-        </div>
 
-        <div class="card">
-          <div id="QTCard" class="carousel slide carouselCard" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../client/public/images/QT_cover.png" alt="First slide">
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="dollCard" class="carousel slide carouselCard " data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/dollhouse_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_3.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_4.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_5.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_6.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#dollCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#dollCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/qt_1.png" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/qt_2.png" alt="Third slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../client/public/images/qt_3.png" alt="Third slide">
+              <div class="card-body">
+                <h5 class="card-title mb-4">Bubble Guppies: Play House</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#DollModal">Learn More</button>
+                </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#QTCard" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#QTCard" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Quiet Thoughts</h5>
-            <button type="button" class="btn" data-toggle="modal" data-target="#QTModal">Learn More</button>
+          
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="rubbleCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_3.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_4.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#rubbleCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#rubbleCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-4">Rubble & Crew: Ruff, Ruff, Repairs</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#RubbleModal">Learn More</button>
+                </div>
+              </div>
+            </div>
           </div>
+          
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="metCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/MET/met_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/MET/met_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/MET/met_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/MET/met_3.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/MET/met_4.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#metCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#metCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-4">Bubble Guppies: Dive into the MET</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#METModal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="repCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_3.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_4.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_5.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_6.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#repCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#repCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-4">Blaze & the Monster Machines: Ready, Set, Repair</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#BlazeRepairModal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="QTCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/QT_cover.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/qt_1.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/qt_2.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/qt_3.png" alt="Third slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#QTCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#QTCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-4">Quiet Thoughts</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#QTModal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-3">
+            <div class="card">
+              <div id="WWCard" class="carousel slide carouselCard" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market.png" alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market_final.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market1.png" alt="Third slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market1_final.png" alt="Forth slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_Greybox_over.png" alt="Fifth slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over.png" alt="Sixth slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_empty.png" alt="Seventh slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_final.png" alt="Eighth slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#WWCard" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#WWCard" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title mb-5">Wizard Wars</h5>
+                <p class="card-text"></p>
+                <div class ="text-end">
+                  <button type="button" class="btn" data-toggle="modal" data-target="#WWModal">Learn More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
         </div>
       </div>
     </div>
     
-
-
   <!-- Modal -->
-  <div class="modal fade" id="QTModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+  <div class="modal fade" id="WWModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="WWMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market_final.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market1.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/Village_market1_final.png" alt="Forth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_Greybox_over.png" alt="Fifth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over.png" alt="Sixth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_empty.png" alt="Seventh slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_final.png" alt="Eighth slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#WWMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#WWMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Wizard Wars</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Wizard Wars is a multiplayer 3rd person Prop Hunt game.
+            This game was originally a way for me to learn Unreal Engine 5, but it has since become a very large focus of my free time.
+            Wizard Wars operates using a client-server model via Steam Advanced Sessions to allow players to host and join servers with their friends.
+            Once in the lobby, player can choose to between being the Hunters and being the Hiders.
+            Hiders and Hunters have access to different spells to aid them in their hiding and seeking efforts in various ways.
+            <br><br>
+            As the sole designer and developer of Wizard Wars, I have faced my fair share of challenges. 
+            On the dev side, I started with limited knowledge of C++ and Unreal Engine and no knowledge of Unreal's Blueprint system.
+            I still have a lot to learn, but I can now say that I am very confident in my abilities across the board when it comes to C++, Unreal Engine 5, and Unreal's Blueprint system.
+            <br><br>
+            On the design side, the biggest challenge I have faced is with balance. In other prop hunt games, I have always had an issue with how difficult it can be for the Hunters to win.
+            In many games, Hiders are allowed to sit as the same prop the entire game with very little being done to allow the Hunters to find them. 
+            Newer games have tried to combat this with sound cues or by not allowing players to choose their prop and forcing the change at specific times.
+            I decided to go a slightly different route. I added a duration to the spell that allows Hiders to become props. This forces players to change their hiding spots frequently or at least change props frequently as recasting the spell resets the duration.
+            I also added a mana system for both Hunters and Hiders with a single refill point on the map. So when Hiders run low on mana, they have to move to a fairly dangerous spot to be able to keep hiding.
+            By forcing interactions between Hunters and Hiders, it gives Hunters a slightly better chance at winning and makes things more interesting for the Hiders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="QTModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div id="QTMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/QT_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/qt_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/qt_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/qt_3.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#QTMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#QTMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Quiet Thoughts</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -331,8 +553,32 @@
     </div>
   </div>
   <div class="modal fade" id="SportModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="sportMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Sports/blaSport_3.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#sportMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#sportMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Blaze & the Monster Machines: Sports Day</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -355,8 +601,41 @@
     </div>
   </div>
   <div class="modal fade" id="DollModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="dollMod" class="carousel slide carouselCard " data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/dollhouse_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_4.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_5.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Dollhouse/doll_6.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#dollMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#dollMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Bubble Guppies: Play House</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -380,8 +659,35 @@
     </div>
   </div>
   <div class="modal fade" id="RubbleModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="rubbleMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Rubble/rubble_4.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#rubbleMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#rubbleMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Rubble & Crew: Ruff, Ruff, Repairs</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -405,8 +711,35 @@
     </div>
   </div>
   <div class="modal fade" id="METModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="metMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/MET/met_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/MET/met_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/MET/met_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/MET/met_3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/MET/met_4.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#metMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#metMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Bubble Guppies: Dive into the MET</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -428,8 +761,41 @@
     </div>
   </div>
   <div class="modal fade" id="BlazeRepairModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
+        <div id="repMod" class="carousel slide carouselCard" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_cover.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_2.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_3.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_4.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_5.png" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/Blaze_Repair/blaRepair_6.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#repMod" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#repMod" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Blaze & the Monster Machines: Ready, Set, Repair</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
