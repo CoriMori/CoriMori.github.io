@@ -18,7 +18,6 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
 .bgTint {
@@ -38,7 +37,6 @@ body, html {
 
 .bg-img2 {
   background-image: url(./images/3DScene_Main.PNG);
-  height: 100%; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,4 +166,5 @@ body, html {
   .card .img-fit{
     aspect-ratio: 1.45/1;
   }
+
 }
