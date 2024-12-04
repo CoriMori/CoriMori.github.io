@@ -419,6 +419,17 @@
                   <div class="carousel-item">
                     <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_final.png" alt="Eighth slide">
                   </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/fireball.jpg" alt="Ninth slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/iceray.jpg" alt="Tenth slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/jump.jpg" alt="Eleventh slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="card-img-top img-fit" src="../client/public/images/WizardWars/minorillusion.jpg" alt="Twelfth slide">
                 </div>
                 <a class="carousel-control-prev" href="#WWCard" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -473,6 +484,18 @@
             <div class="carousel-item">
               <img class="card-img-top img-fit" src="../client/public/images/WizardWars/VillageMap_over_final.png" alt="Eighth slide">
             </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/fireball.jpg" alt="Ninth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/iceray.jpg" alt="Tenth slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/jump.jpg" alt="Eleventh slide">
+            </div>
+            <div class="carousel-item">
+              <img class="card-img-top img-fit" src="../client/public/images/WizardWars/minorillusion.jpg" alt="Twelfth slide">
+            </div>
           </div>
           <a class="carousel-control-prev" href="#WWMod" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -490,22 +513,26 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>Wizard Wars is a multiplayer 3rd person Prop Hunt game. This game is still in progress, so the featured photos show the level design process for one of the maps.
+          <p>Wizard Wars is a multiplayer 3rd person Prop Hunt game. This game is still in progress, so the featured photos show the level design process for one of the maps and a few of the spells players will have access to during the game.
             This game was originally a way for me to learn Unreal Engine 5, but it has since become a very large focus of my free time.
             Wizard Wars operates using a client-server model via Steam Advanced Sessions to allow players to host and join servers with their friends.
-            Once in the lobby, player can choose to between being the Hunters and being the Hiders.
-            Hiders and Hunters have access to different spells to aid them in their hiding and seeking efforts in various ways.
+            Once in the lobby, players can choose between being the Hunters and being the Hiders and test out their spells against a few "willing" participants.
             <br><br>
-            As the sole designer and developer of Wizard Wars, I have faced my fair share of challenges. 
+            As the sole designer and developer of Wizard Wars, I have faced my fair share of challenges.
             On the dev side, I started with limited knowledge of C++ and Unreal Engine and no knowledge of Unreal's Blueprint system.
             I still have a lot to learn, but I can now say that I am very confident in my abilities across the board when it comes to C++, Unreal Engine 5, and Unreal's Blueprint system.
             <br><br>
             On the design side, the biggest challenge I have faced is with balance. In other prop hunt games, I have always had an issue with how difficult it can be for the Hunters to win.
-            In many games, Hiders are allowed to sit as the same prop the entire game with very little being done to allow the Hunters to find them. 
+            In many games, Hiders are allowed to sit as the same prop the entire game with very little being done to allow the Hunters to find them.
             Newer games have tried to combat this with sound cues or by not allowing players to choose their prop and forcing the change at specific times.
             I decided to go a slightly different route. I added a duration to the spell that allows Hiders to become props. This forces players to change their hiding spots frequently or at least change props frequently as recasting the spell resets the duration.
             I also added a mana system for both Hunters and Hiders with a single refill point on the map. So when Hiders run low on mana, they have to move to a fairly dangerous spot to be able to keep hiding.
             By forcing interactions between Hunters and Hiders, it gives Hunters a slightly better chance at winning and makes things more interesting for the Hiders.
+            <br><br>
+            One of my greatest accomplishments in Wizard Wars so far is actually implementing the Gameplay Ability System (GAS) from scratch. Originally I had built my own system for casting spells, but it was admittedly very flawed.
+            This was something that I didn't even realize until after my first playtest where players had major issues with spell casting that I didn't have in the engine. After that I spent a few months looking into and implementing GAS.
+            It was difficult to learn and set up at first, but I am totally hooked on it now. Implementing GAS really helped to further my understanding of replication in multiplayer games and it made me realize that a lot of what I had initially set up was wrong and relying too much on the client's information.
+            Even though it was a lot of work, it's safe to say that swapping to GAS has fundamentally changed Wizard Wars for the better, and I am so excited to share it with the world when it's ready. But for now, look at the pretty pictures! Wow! Oooo! Amazing!
           </p>
         </div>
       </div>
