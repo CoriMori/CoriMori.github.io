@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/CoriMori.github.io/',
+  base: '/CoriMori.github.io',
   plugins: [react(), tailwindcss()],
 })
