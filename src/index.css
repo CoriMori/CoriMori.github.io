@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Coolvetica";
-  src: local("Coolvetica"), url("fonts/coolvetica_rg.otf"), format('otf');
+  src: local("Coolvetica"), url("/fonts/coolvetica_rg.otf"), format('otf');
 }
 
 @theme {
@@ -16,11 +16,9 @@
 
   --color-dark-100: #0f0d23;
 
-  --font-dm-sans: DM Sans, sans-serif;
-
   --breakpoint-xs: 480px;
 
-  --background-image-main: url("main_bg.png");
+  --background-image-main: url("/main_bg.png");
 }
 
 @layer base {
@@ -65,7 +63,7 @@
   }
 
   .btn-img {
-    @apply max-w-16 cursor-pointer;
+    @apply max-w-16 cursor-auto;
   }
 
   .filter {
@@ -132,10 +130,6 @@
 
 .indicator-btns {
   @apply absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group-focus:outline-none;
-}
-
-@utility text-gradient {
-  @apply bg-linear-to-r from-[#D6C7FF] to-[#AB8BFF] bg-clip-text text-transparent;
 }
 
 @utility fancy-text {
