@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "Coolvetica";
+  src: local("Coolvetica"), url("/fonts/coolvetica_rg.otf"), format('otf');
+}
+
+@theme {
+  --color-primary: #ffffff;
+
+  --color-light-100: #cecefb;
+  --color-light-200: #a8b5db;
+
+  --color-gray-100: #9ca4ab;
+
+  --color-dark-100: #0f0d23;
+
+  --breakpoint-xs: 480px;
+
+  --background-image-main: url("/main_bg.png");
+}
+
+@layer base {
+  body {
+    font-family: "Coolvetica";
+    font-optical-sizing: auto;
+    background: #030014;
+  }
+
+  h1 {
+    @apply mx-auto max-w-4xl text-center text-5xl tracking-[-1%] text-white sm:text-8xl;
+  }
+
+  h2 {
+    @apply mx-auto max-w-4xl text-4xl text-white text-center sm:text-7xl;
+  }
+
+  main {
+    @apply min-h-screen relative bg-primary;
+  }
+
+  header {
+    @apply sm:mt-10 mt-5;
+  }
+
+  header img {
+    @apply w-full max-w-lg h-auto object-contain mx-auto drop-shadow-md;
+  }
+}
+
+@layer components {
+  .bg {
+    @apply bg-main w-screen h-screen bg-repeat bg-center bg-cover absolute z-0 overflow-x-scroll;
+  }
+
+  .wrapper {
+    @apply px-5 py-12 xs:p-10 max-w-7xl mx-auto flex flex-col relative;
+  }
+
+  .btn-standard {
+    @apply text-black font-bold text-3xl px-2 py-0 bg-white hover:bg-gray-100 hover:text-gray-800 rounded-lg transition duration-300 cursor-pointer;
+  }
+
+  .btn-img {
+    @apply max-w-16 cursor-auto;
+  }
+
+  .filter {
+    @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
+
+    & div {
+      @apply relative flex items-center;
+    }
+
+    & img {
+      @apply absolute left-2 h-5 w-5;
+    }
+
+    & input {
+      @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-light-200 outline-hidden;
+    }
+  }
+
+  .all-cards {
+    @apply space-y-9;
+
+    & ul {
+      @apply grid grid-cols-1 gap-5 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3;
+    }
+  }
+
+  .project-card {
+    .card-btn {
+      @apply bg-black inline-flex items-center px-3 py-2 text-center rounded-lg h-8 text-white hover:bg-gray-100 hover:text-gray-800 transition duration-300 cursor-pointer;
+    }
+
+    & h5 {
+      @apply text-black font-bold text-center line-clamp-1 text-2xl;
+    }
+
+    & h6 {
+      @apply text-black italic text-center line-clamp-1 text-lg;
+    }
+
+    & p {
+      @apply text-black mb-3 font-normal;
+    }
+  }
+
+  .modal {
+    .modal-card {
+      @apply fixed inset-0 bg-black/25 backdrop-blur-sm z-30 flex justify-center items-center;
+    }
+
+    .modal-body {
+      @apply bg-white p-2 rounded-lg;
+    }
+
+    & h3 {
+      @apply text-black font-bold text-2xl text-center;
+    }
+
+    &p {
+      @apply text-black;
+    }
+
+  }
+}
+
+.indicator-btns {
+  @apply absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group-focus:outline-none;
+}
+
+@utility fancy-text {
+  -webkit-text-stroke: 5px rgba(206, 206, 251, 0.5);
+  font-size: 190px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+@utility hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.text-shadow {
+  text-shadow: 5px 2px 5px #000000;
+}
+
+.card-shadow {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
