@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Coolvetica";
-  src: local("Coolvetica"), url("./fonts/coolvetica_rg.otf"), format('otf');
+  src: local("Coolvetica"), url("fonts/coolvetica_rg.otf"), format('otf');
 }
 
 @theme {
@@ -20,7 +20,7 @@
 
   --breakpoint-xs: 480px;
 
-  --background-image-main: url("/main_bg.png");
+  --background-image-main: url("main_bg.png");
 }
 
 @layer base {
