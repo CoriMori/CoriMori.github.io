@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import Filter from './Components/Filter'
 import Header from './Components/Header'
 import ProjectCard from './Components/ProjectCard'
-import ProjectData from './Data/ProjectData'
+import { ProjectData } from './Data/ProjectData'
 import AboutLayout from './Components/AboutLayout'
 
 const App = () => {
   const [isAboutVisible, showAboutSection] = useState(false);
   const [isProjectsVisible, showProjectSection] = useState(false);
   const [isDefaultNameVisible, setDefaultName] = useState(true);
-
+  const [projects, setProjects] = useState(ProjectData);
   const HandleClickAbout = () => {
     showAboutSection(true);
     showProjectSection(false);
@@ -31,8 +31,9 @@ const App = () => {
           <div className='flex flex-col'>
             {isProjectsVisible && (
               <section className='all-cards'>
+                <Filter projectUpdate={setProjects} />
                 <ul>
-                  {ProjectData.map((d) => {
+                  {projects.map((d) => {
                     return <ProjectCard key={d.projectName} projectData={d} />
                   })}
                 </ul>
