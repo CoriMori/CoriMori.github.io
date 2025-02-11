@@ -18,9 +18,9 @@ const Carousel = ({ images }) => {
 
     return (
         <div className="overflow-hidden relative carousel">
-            <div className='flex transition ease-out duration-700 rounded-t-lg aspect-16/9' style={{ transform: `translateX(-${(currentImg * 100)}%)` }}>
+            <div className='flex transition ease-out duration-700 rounded-t-lg' style={{ transform: `translateX(-${(currentImg * 100)}%)` }}>
                 {images.map((i) => {
-                    return <img key={i} className='rounded-t-lg' src={i}></img>;
+                    return <img key={i} className='rounded-t-lg aspect-16/9' src={i}></img>;
                 })}
             </div>
             {
