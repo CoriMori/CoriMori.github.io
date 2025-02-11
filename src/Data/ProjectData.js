@@ -69,7 +69,7 @@ const ProjectData = [
         projectType: TAGS.PERSONAL,
         language: LANGUAGES.CB,
         modalBody: "Dungeon Raiders is a short prototype that I made to learn a little more about C++ in Unreal Engine 5. When I first started working in Unreal Engine, I defaulted to doing everything in Blueprints. I have since learned that the best way to work in Unreal Engine is to have function in C++ and form in Blueprints. My main goal with Dungeon Raiders was to get a feel for what that would be like. This project originates from Game Dev TV's Unreal Engine C++ course, but I ended up expanding on it a bit and putting my own spin on it. The original project didn't have any sort of gameplay loop, so I added a simple one in. I also expanded on the gameplay mechanics by adding in controls to throw and rotate held objects. The README of the project on my GitHub goes deeper into what all I did compared to the original curriculum, so take a look if you are interested! Overall I think this project went really well. It took me about a week to complete it and the main thing I learned is that whatever logic I'm doing in Blueprints can pretty easily be transferred over into C++.",
-        video: "project_images/DungeonRaiders/DR_Flythrough.mp4",
+        video: "https://youtu.be/wCUVp5mp43o?si=W4tWF50VLB0GmJzw",
         projectLink: "",
         tags: [PROJECT_TAGS.PERSONAL, PROJECT_TAGS.UE],
     },
