@@ -66,22 +66,6 @@
     @apply max-w-16 cursor-auto;
   }
 
-  .filter {
-    @apply w-full bg-light-100/5 px-4 py-3 rounded-lg mt-10 max-w-3xl mx-auto;
-
-    & div {
-      @apply relative flex items-center;
-    }
-
-    & img {
-      @apply absolute left-2 h-5 w-5;
-    }
-
-    & input {
-      @apply w-full bg-transparent py-2 sm:pr-10 pl-10 text-base text-gray-200 placeholder-light-200 outline-hidden;
-    }
-  }
-
   .all-cards {
     @apply space-y-9;
 
@@ -122,9 +106,26 @@
     }
   }
 
+  .player-wrapper {
+    @apply relative aspect-[16/9];
+
+    .video-wrapper {
+      @apply absolute;
+    }
+  }
+
   .modal {
+    .size-control {
+      @apply relative w-[300px] lg:w-[800px] md:w-[800px] sm:w-[600px];
+
+    }
+
     .modal-card {
       @apply fixed inset-0 bg-black/25 backdrop-blur-sm z-30 flex justify-center items-center;
+    }
+
+    .modal-btn {
+      @apply bg-black text-center pr-2 pl-2 m-1 rounded-lg h-8 text-white hover:bg-gray-100 hover:text-gray-800 transition duration-300 cursor-pointer;
     }
 
     .modal-body {
@@ -142,8 +143,10 @@
   }
 }
 
-.indicator-btns {
-  @apply absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group-focus:outline-none;
+.carousel {
+  .btns {
+    @apply p-1 text-white text-2xl bg-black/50 rounded-full hover:text-gray-500;
+  }
 }
 
 @utility fancy-text {

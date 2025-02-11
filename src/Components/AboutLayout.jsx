@@ -8,9 +8,9 @@ const AboutLayout = () => {
                 <p className='pt-2 text-lg'>
                     The quote above is something I take to heart in almost every aspect of my life, but especially in my work.
                     I firmly believe that there is strength is being able to do a bit of everything, rather than being hyper focused on one subsection of a discipline.
-                    If you’re looking for someone who has only ever done one type of programming, you won’t find them here.
+                    If you're looking for someone who has only ever done one type of programming, you won't find them here.
                     I pride myself on being well versed in multiple programming languages, engines, libraries, and disciplines.
-                    So if you’re looking for someone to fill a hole in your team or someone who can learn just about anything, then look no further.
+                    So if you're looking for someone to fill a hole in your team or someone who can learn just about anything, then look no further.
                 </p>
             </div>
 
@@ -32,6 +32,7 @@ const AboutLayout = () => {
                         <h4 className='font-bold'>Libraries & Frameworks:</h4>
                         <ul className='pl-5 list-disc'>
                             <li>React</li>
+                            <li>Tailwind CSS</li>
                             <li>NodeJS</li>
                             <li>NextJS</li>
                             <li>Spine (Phaser)</li>
