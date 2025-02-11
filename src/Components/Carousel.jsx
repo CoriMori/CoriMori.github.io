@@ -17,10 +17,10 @@ const Carousel = ({ images }) => {
     }
 
     return (
-        <div className="overflow-hidden relative">
-            <div className='flex transition ease-out duration-700 rounded-t-lg aspect-16/9' style={{ transform: `translateX(-${currentImg * 100}%)` }}>
+        <div className="overflow-hidden relative carousel">
+            <div className='flex transition ease-out duration-700 rounded-t-lg' style={{ transform: `translateX(-${(currentImg * 100)}%)` }}>
                 {images.map((i) => {
-                    return <img key={i} className='rounded-t-lg' src={i}></img>;
+                    return <img key={i} className='rounded-t-lg aspect-16/9' src={i}></img>;
                 })}
             </div>
             {
@@ -35,7 +35,7 @@ const Carousel = ({ images }) => {
                                             setCurrentImg(i);
                                         }}
                                         key={"circle" + i}
-                                        className={`rounded-full w-1 h-1 cursor-pointer  ${i == currentImg ? "bg-white" : "bg-gray-500"
+                                        className={`rounded-full w-1 h-1 ${i == currentImg ? "bg-white" : "bg-gray-500"
                                             }`}
                                     ></div>
                                 );
@@ -56,11 +56,11 @@ const GetIndicatorIcons = (prevImg, nextImg) => {
 
     return (
         <div className="absolute inset-0 flex items-center justify-between p-4">
-            < button onClick={prevImg} className='p-1 text-white text-2xl hover:text-gray-500' >
+            < button onClick={prevImg} className='btns' >
                 <MdKeyboardArrowLeft />
             </button >
 
-            <button onClick={nextImg} className='p-1 text-white text-2xl hover:text-gray-500'>
+            <button onClick={nextImg} className='btns'>
                 <MdKeyboardArrowRight />
             </button>
         </div >
