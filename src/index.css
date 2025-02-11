@@ -90,6 +90,20 @@
     }
   }
 
+  .filter-dropdown {
+    .dropdown {
+      @apply mt-2 rounded-xl bg-white pt-2 w-50;
+    }
+
+    & h3 {
+      @apply font-bold;
+    }
+
+    .apply-btn {
+      @apply bg-black inline-flex items-center m-2 pr-2 pl-2 pb-1 text-center rounded-lg h-8 text-white hover:bg-gray-100 hover:text-gray-800 transition duration-300 cursor-pointer;
+    }
+  }
+
   .project-card {
     .card-btn {
       @apply bg-black inline-flex items-center px-3 py-2 text-center rounded-lg h-8 text-white hover:bg-gray-100 hover:text-gray-800 transition duration-300 cursor-pointer;
