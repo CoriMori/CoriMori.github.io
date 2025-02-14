@@ -38,7 +38,7 @@ const ProjectDataLayout = ({ projectData, videoClickEvent, currentValue }) => {
                     <button className='modal-btn' onClick={() => { HandleClick("video"); }}>{btnText}</button>
                 )}
                 {projectData.projectLink && (
-                    <button className='modal-btn' onClick={() => { HandleClick("playable"); }}>View Playable</button>
+                    <button className='modal-btn' onClick={() => { HandleClick("playable"); }}>View Itch.io</button>
                 )}
                 {projectData.githubLink && (
                     <button className='modal-btn' onClick={() => { HandleClick("github"); }}>View Github</button>
