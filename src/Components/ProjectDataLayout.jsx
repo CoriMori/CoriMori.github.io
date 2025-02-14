@@ -3,13 +3,27 @@ import React, { useState } from 'react'
 const ProjectDataLayout = ({ projectData, videoClickEvent, currentValue }) => {
     const [btnText, setButtonText] = useState("View Video");
 
-    const HandleClick = () => {
-        if (btnText == "View Video") {
-            setButtonText("View Images");
-        } else {
-            setButtonText("View Video");
+    const HandleClick = (btnType) => {
+        switch (btnType) {
+            case "video":
+                if (btnText == "View Video") {
+                    setButtonText("View Images");
+                } else {
+                    setButtonText("View Video");
+                }
+                videoClickEvent(!currentValue);
+                break;
+            case "playable":
+                GoToLink(projectData.projectLink);
+                break;
+            case "github":
+                GoToLink(projectData.githubLink);
+                break;
         }
-        videoClickEvent(!currentValue);
+    }
+
+    const GoToLink = (link) => {
+        window.open(link, '_blank');
     }
 
     return (
@@ -21,7 +35,13 @@ const ProjectDataLayout = ({ projectData, videoClickEvent, currentValue }) => {
             </p>
             <div>
                 {projectData.video && (
-                    <button className='modal-btn' onClick={() => { HandleClick(); }}>{btnText}</button>
+                    <button className='modal-btn' onClick={() => { HandleClick("video"); }}>{btnText}</button>
+                )}
+                {projectData.projectLink && (
+                    <button className='modal-btn' onClick={() => { HandleClick("playable"); }}>View Itch.io</button>
+                )}
+                {projectData.githubLink && (
+                    <button className='modal-btn' onClick={() => { HandleClick("github"); }}>View Github</button>
                 )}
             </div>
         </>
