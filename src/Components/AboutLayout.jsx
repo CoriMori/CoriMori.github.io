@@ -25,6 +25,7 @@ const AboutLayout = () => {
                             <li>Javascript</li>
                             <li>Kotlin</li>
                             <li>HTML & CSS</li>
+                            <li>Python</li>
                         </ul>
                     </div>
 
