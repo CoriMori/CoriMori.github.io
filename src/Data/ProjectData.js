@@ -17,6 +17,7 @@ const ENGINES = {
 const LANGUAGES = {
     NONE: 'N/A',
     CPP: 'C++',
+    PY: "Python",
     UEB: 'Blueprints',
     CB: 'C++ & Blueprints',
     CSRP: 'C#',
@@ -46,6 +47,21 @@ const PROJECT_TAGS = {
 }
 const ProjectData = [
     {
+        projectName: "Bird's Eye View",
+        images: ["project_images/BirdsEyeView/bev_1.png", "project_images/BirdsEyeView/bev_2.png"],
+        engine: ENGINES.UE,
+        role: ROLE.LDD,
+        summary: "Motion control flight sim, with 100% more bird!",
+        status: TAGS.INPROGRESS,
+        projectType: TAGS.PERSONAL,
+        language: LANGUAGES.CPP,
+        modalBody: "Probably my most ambitious project to date; Bird's Eye View is a small in progress demo where you control a bird with your body. When you flap, the bird flaps. When you tilt, the bird turns. The bird follows a set path over the environment, but everything else is fully controlled by the user. The best part is, you don't need anything other than a standard webcam! I did a lot of backend work to get this up and running; probably deserving it's own card here on my portfolio, but that is for another time. To keep it short, I made a plugin that allowed me to run Python in Unreal Engine 5 during runtime so I could use Google's MediaPipe Pose Landmarker model to track the player's body movements. Once that was set, I was able to hook it up to a model and play animations in response to specific motions. When nothing is detected by the camera, the bird will automatically land. When someone enters the camera's view, it will look for key points and wait for the user's arms to raise to the sides, like a bird taking flight. At this point, the bird will take off and begin it's loop around the environment. I plan on expanding this project more by adding adaptive tilt and fly speeds based on the speed of the user's movements.",
+        video: "https://www.youtube.com/watch?v=ksjmP26-xAw",
+        projectLink: "",
+        githubLink: "",
+        tags: [PROJECT_TAGS.PERSONAL, PROJECT_TAGS.UE],
+    },
+    {
         projectName: "Wizard Wars",
         images: ["project_images/WizardWars/Village_market_final.png", "project_images/WizardWars/Village_market1_final.png", "project_images/WizardWars/VillageMap_Greybox_over.png", "project_images/WizardWars/VillageMap_over_final.png", "project_images/WizardWars/fireball.jpg", "project_images/WizardWars/iceray.jpg", "project_images/WizardWars/jump.jpg"],
         engine: ENGINES.UE,
@@ -54,7 +70,7 @@ const ProjectData = [
         status: TAGS.INPROGRESS,
         projectType: TAGS.PERSONAL,
         language: LANGUAGES.CB,
-        modalBody: "Originally a way to learn more about Unreal Engine, Wizard Wars has quickly become my main focus on most days. I never intended to make a full game out of this, let alone a multiplayer game. However, I let my curiosity lead me down this path and I'm not turning back now! I have faced quite a few challenges while working on Wizard Wars. Prior to this, I was working as a game developer for web based games. The jump from JavaScript and Phaser to C++, Blueprints, and UE5 was violent. I had to learn a new engine, new tools, new frameworks, a new visual scripting language, I had to refresh my knowledge of C++, and I had to learn everything about making multiplayer games. It was a tough road, but I made it! Here I am a year later and I'm able to say that I have a pretty solid foundation to build off of. I've hosted a few small, private playtests with my friends. I know I still have a ways to go before I can really call this a full game, but I have no intentions of stopping or slowing down. I will openly admit that I have made a lot of mistakes in this project. My main one was working solely in Blueprints for most of it. I didn’t swap from Blueprints to C++ until I started implementing the Gameplay Ability System (GAS) to revamp my spell casting system. I am now in the process of refactoring a lot of the code I’ve done in Blueprints to C++ to make Wizard Wars easier to work on going forward. Regardless, this is probably my favorite project to work on, simply because I find myself learning more every time I open it up. I currently only have some screenshots to show off, but I will be sure to grab a video of it soon!",
+        modalBody: "I never intended to make a full game out of this, let alone a multiplayer game. However, I let my curiosity lead me down this path and I'm not turning back now! I have faced quite a few challenges while working on Wizard Wars. Prior to this, I was working as a game developer for web based games. The jump from JavaScript and Phaser to C++, Blueprints, and UE5 was violent. I had to learn a new engine, new tools, new frameworks, a new visual scripting language, I had to refresh my knowledge of C++, and I had to learn everything about making multiplayer games. I will openly admit that I have made a lot of mistakes in this project. My main one was working solely in Blueprints for most of it. I didn't swap from Blueprints to C++ until I started implementing the Gameplay Ability System (GAS) to revamp my spell casting system. I am now in the process of refactoring a lot of the code I've done in Blueprints to C++ to make Wizard Wars easier to work on going forward.",
         video: "",
         projectLink: "",
         githubLink: "",
